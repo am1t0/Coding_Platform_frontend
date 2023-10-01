@@ -1,0 +1,13 @@
+.paras ul{
+    list-style: inside;
+}
+.paras ul li{
+    margin: 14px 0px;
+}
+.img_container img{
+    width: 71%;
+}
+.flow_diagram{
+    display: flex;
+    justify-content: center;
+}

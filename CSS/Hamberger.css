@@ -1,0 +1,57 @@
+@media screen and (max-width:1020px) {
+    .uppernav{
+        justify-content: space-between;
+        padding-right: 25px;
+        padding-left: 25px;
+    }
+    .logo{
+        right: -40px;
+    }
+    .uppernav ul{
+        flex-direction:column;
+    position:fixed;
+    z-index: 111;
+    left:-24%;
+    top:64px;
+    text-align:center;
+    background-color: white;
+    width:20%;
+    transition: 0.4s ease-in-out;
+    gap:0px;
+    box-shadow: 1px 1px 15px 0 rgba(0, 0, 0, .18);
+    border-top: 4px solid rgb(9, 116, 216);
+    border-radius: 2px;
+    }
+    .Hambergur{
+        display: block;
+        position: relative;
+        right: -9px;
+}
+    
+    .Hambergur.active .bar:nth-child(2){
+        opacity: 0;
+    }
+    .Hambergur.active .bar:nth-child(1){
+        transform: translateY(7px) rotate(45deg);
+    }
+    .Hambergur.active .bar:nth-child(3){
+        transform: translateY(-5px) rotate(-45deg);
+    }
+    .uppernav ul.active{
+        left: 0;
+    }
+    #dropdown{
+        left: 97px;
+    width: 100%;
+    top: 42px;
+    }
+    /* -------------RIGHT PORTION STARTS HERE------------------  */
+    .button_resp{
+       display: none;
+    }
+    .user{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
