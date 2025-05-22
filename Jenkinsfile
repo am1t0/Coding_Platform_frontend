@@ -28,6 +28,7 @@ pipeline {
             steps {
                 dir('gh-pages-deploy') {
                     sh """
+                        rm -rf .git
                         git init
                         git config user.name "${GIT_NAME}"
                         git config user.email "${GIT_EMAIL}"
