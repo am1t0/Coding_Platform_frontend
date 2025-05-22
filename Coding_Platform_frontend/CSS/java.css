@@ -1,0 +1,102 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+section{
+    display: flex;
+}
+
+/* Designing the first aside containing topics */
+#first_aside{
+    height: 624px;
+    width: 19%;
+    overflow-y: scroll;
+    display: flex;
+    flex-direction: column;
+    background-color: #eeeeee;
+    box-shadow: -6px -8px 12px ;
+}
+.content{
+    /* border: 2px solid ; */
+    display: flex;
+    flex-direction: column;
+    padding-left: 36px;
+    padding-top: 22px;
+}
+.topic{
+    list-style:auto;
+}
+.topic a{
+    text-decoration:none;
+    color: black;
+}
+.topic a:hover{
+    color:blue;
+}
+
+/* Designing the second aside containing content  */
+
+#second_aside{
+    height: 590px;
+    overflow-y: scroll;
+    /* border: 2px solid red; */
+    position: relative;
+    left: 62px;
+    top: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 61%;
+    gap: 33px;
+    font-size: 18px;
+}
+#second_aside::-webkit-scrollbar{
+   display: none;
+}
+#second_aside h1{
+    border-radius: 3px;
+    font-size: xx-large;
+    margin: auto;
+    background-color: lavender;
+    padding: 0px 25px;
+    border: none;
+}
+.sets h2{
+    background: lavender;
+    padding: 0px 17px;
+}
+.sets{
+    display: flex;
+    flex-direction: column;
+    gap: 26px
+}
+.img_container{
+    display: flex;
+    /* border: 2px solid red; */
+    width: 93%;
+    justify-content: center;
+}
+.img_container img{
+    height: 355px;
+    width: 73%;
+    border: 2px;
+    position: relative;
+    left: 27px;
+}
+.paras{
+    width: 97%;
+    text-align: justify;
+    font-size: 18px;
+}
+.first_Java_Program{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* border: 2px solid blue; */
+}
+.first_Java_Program img{
+    width: 98%;
+}
+.application_list {
+    list-style: inside;
+}

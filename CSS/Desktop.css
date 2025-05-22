@@ -1,0 +1,645 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    box-sizing: border-box;
+    font-family: "baloo 2";
+    transition: all 10s ease;
+}
+/* -------------UPPERNAV DESIGN---------------  */
+.uppernav{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding-top: 11px;
+    /* border: 2px solid red; */
+}
+/* --------------DESIGNING THE HAMBURGER MENU -------- */
+.Hambergur{
+    display: none;
+}
+.bar{
+    display: block;
+    height: 2px;
+    width: 26px;
+    background-color: black;
+    margin: 4px 0px;
+    transition: all 0.3s ease;
+}
+/* ----------hamburger design ends here -------- */
+.uppernav ul{
+    /* border: 3px solid blue; */
+    display: flex;
+    list-style: none;
+}
+.uppernav ul li{
+   padding: 14px;
+}
+.uppernav ul li a{
+    font-size: 18px;
+    cursor: pointer;
+    text-decoration: none;
+}
+.uppernav ul li img{
+    position: relative;
+    top: 5px;
+    height: auto;
+    width: 18px;
+    cursor:pointer;
+}
+.uppernav ul li:hover a,
+.uppernav ul li:hover img{
+    color: blue;
+    transform: rotate(-180deg);
+    transition: .5s;
+}
+#dropdown{
+    display: none;
+    position: absolute;
+    z-index: 11;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 1px 1px 15px 0 rgba(0, 0, 0, .18);
+    border-top: 4px solid rgb(9, 116, 216);
+    border-radius: 4px;
+}
+#dropdown li{
+     padding: 10px 20px;
+     color: rgb(0, 0, 0);
+     cursor:pointer
+}
+#dropdown li:hover{
+    background-color: rgb(223, 223, 223);
+}
+.uppernav ul li:hover #dropdown{
+    display: block;
+
+}
+.logo{
+    display: flex;
+    align-items: center;
+    position: relative;
+    right: 52px;
+    bottom: 5px;
+}
+.logo img{
+    height: 72px;
+    width: 141px;
+    cursor: pointer;
+}
+.log_n_sign{
+    /* border: 2px solid blue; */
+    display: flex;
+    justify-content: space-between;
+}
+.log_n_sign button{
+    margin: 8px;
+    border: none;
+    line-height: 36px;
+    padding: 0px 15px;
+    background-color: cornflowerblue;
+    font-size: 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    color: darkslategrey;
+}
+.log_n_sign button:hover{
+    background-color: #4f80d8;
+}
+#prem{
+    font-family: 'ADLaM Display', cursive;
+    margin-right: 46px;
+    background-color: #d05bd0;;
+    color:#45371c;
+}
+#prem:hover{
+    background-color: #c22ac2;;
+}
+/* --------------WRAPPING THE LOGIN AND SIGNUP IN LOGO--------  */
+.user{
+    display: none;
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+}
+.user img{
+    height: 30px;
+    width: 30px;
+}
+/* ---------------LOWERNAV DESIGN-----------------  */
+.lowernav{
+    /* background-color: black;
+    z-index: 10; */
+    background-color: black;
+    position: relative;
+    z-index: 10;
+    box-shadow: 0px 2px 8px;
+}
+.lowernav ul{
+    list-style: none;
+       display: flex;
+       align-items: center;
+       justify-content: space-between;
+      overflow: scroll;
+}
+.lowernav ul::-webkit-scrollbar{
+    display: none;
+}
+.lowernav ul li{
+  padding: 8px 0px;
+}
+.lowernav ul li a{
+    color: white;
+    text-decoration: none;
+    font-size: 13pt;
+    white-space:nowrap;
+    padding: 0px 17px;
+}
+.lowernav ul li a:hover{
+    color: rgb(108, 108, 228);
+}
+
+
+/* ----------------HOME DESIGN-------------------- */
+.home{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.coder_Boy{
+    display: flex;
+    justify-content: center;
+}
+.coder_Boy img{
+    position: relative;
+    top: -7px;
+    height: auto;
+    width: 80%;
+}
+.searchBar {
+    border: 2px solid rgb(110, 110, 110);
+    position: relative;
+    bottom: 38px;
+    display: flex;
+    border-radius: 26px;
+}
+.searchIcon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 4px;
+}
+.searchIcon img{
+    height: auto;
+    width: 24px;
+}
+.searchBar input{
+    border: none;
+    outline: none;
+    font-size: 17px;
+    padding: 9px 32px;
+    width: 323px;
+   border-radius: 26px;
+}
+.searchBar input::placeholder{
+    text-align: center;
+}
+.Slogan{
+    padding-top: 33px;
+    height: 258px;
+    /* border: 2px solid red; */
+    text-align: center;
+}
+.Slogan h1{
+    font-size: 52px;
+    font-family: 'ADLaM Display', cursive;
+}
+/* ---------------HOME BOTTOM DESIGN--------------  */
+.cp_cs_dsa{
+/* border: 2px solid red; */
+width: 97%;
+display:flex;
+flex-direction: row;
+justify-content: space-evenly;
+align-items: center;
+}
+.box{
+    /* border: 2px solid blue; */
+    height: 432px;
+    width: 30%;
+    border-radius: 7px;
+    background: #2e3446;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.box img{
+    margin-top: 17px;
+    height: 283px;
+    width: 94%;
+    border-radius: 10px;
+}
+.box ul{
+    width: 100%;
+   display: flex;
+   flex-direction: column;
+   align-items:center;
+}
+.sub_cont{
+    cursor: pointer;
+    list-style: none;
+    background-color: cornflowerblue;
+    text-align: center;
+    border-radius: 4px;
+    width: 58%;
+    margin: 11px 0px;
+}
+.sub_cont:hover,.sub_cont:hover a{
+    transform: scale(1.1);
+    transition: 1ms;
+    background-color: white;
+    color: black;
+}
+.sub_cont a{
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+}
+.sub_cont img{
+    height: 20px;
+    width: 20px;
+}
+
+
+/* ---------------MAIN CONTENTS OF WEBSITE------------  */
+.main_content{
+    /* border: 2px solid red; */
+    padding-top: 42px;
+margin: 100px 90px;
+display: grid;
+grid-gap: 30px;
+  }
+
+.main_content h1{
+    position: relative;
+    left: 17px;
+    top: 26px;
+}
+.temp{
+    /* border: 2px solid black; */
+    display: flex;
+    overflow-x: scroll;
+}
+.temp::-webkit-scrollbar{
+    display: none;
+}
+.content{
+ /* border: 2px solid red; */
+ display: flex;
+}
+.content div{
+    margin: 0px 10px;
+    height: 182px;
+    width: 310px;
+    font-size: 25px;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+     border-radius: 5px;
+     cursor: pointer;
+     
+}
+.content div:hover{
+    box-shadow: .1rem .2rem 3rem black;
+}
+.content div img{
+    margin: 0px 8px;
+     box-shadow: 1px 1px 5px;
+    background: white;
+}
+/* ----------------CONTENT BOX COLOR-----------------  */
+#LBasic div{
+    background-color: tomato;
+}
+#DS div{
+    background-color: #2ba4cc;
+}
+#ML div{
+ background-color: #b555d4;   
+}
+#webD div{ 
+    background-color: orange;
+}
+#App div{
+    background-color:#f5f515;
+}
+
+/* -----------------UNKNOWN-----------------------  */
+.courses{
+    height: auto;
+    background-color: #2e3446;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+.container{
+    height: 553px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#corrs_img{
+   display: flex;
+   justify-content: center;
+}
+#corrs_img img{
+    width: 86%;
+    visibility: hidden;
+    height: auto;
+    border-top-right-radius: 20px ;
+    border-bottom-left-radius: 20px ;
+    box-shadow: -14px -14px blue;
+}
+#ide{
+    display: flex;
+    justify-content: center;
+}
+#ide img{
+    width: 86%;
+    visibility: hidden;
+    height: auto;
+    border-top-right-radius: 20px ;
+    border-bottom-left-radius: 20px ;
+    box-shadow: 14px 14px blue;
+}
+#text{
+    color: white;
+    max-width: 615px;
+    width: 89%;
+    padding: 0px 33px;
+    /* background-color: orange; */
+}
+.btn{
+    text-align: center;
+    padding-top: 21px;
+    padding-right: 81px;
+}
+.btn button{
+    font-family: 'Outfit','sans-serif';
+    border-radius: 9px;
+    font-size: 20px;
+    padding: 10px 31px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    color: white;
+    background-color: #4079DA;
+}
+.btn button:hover{
+    background-color:#2162d0 ;
+}
+.start{
+    font-family: 'IBM Plex Mono',monospace;
+    font-size: 23px;
+    padding: 0px 12px; 
+}
+#text h1{
+    font-weight: 100;
+    font-size: 34px;
+    padding: 12px;
+}
+.end{
+    font-size: 18px;
+    padding: 12px;
+}
+.animate2{
+    position: relative;
+    animation-name: slide1;
+    animation-duration: 1s;
+    animation-delay: 0s;
+    -webkit-animation-direction: normal;
+}
+@keyframes slide1 {
+    from{
+          left: -800px
+    }
+    to{
+        left: 0px;
+    }
+}
+.animate1{
+    position: relative;
+    animation-name: slide2;
+    animation-duration: 1s;
+    animation-delay: 0s;
+    -webkit-animation-direction: normal;
+}
+@keyframes slide2 {
+    from{
+          right: -800px
+    }
+    to{
+        right: 0px;
+    }
+}
+
+/* -----------------Problem of DAy-----------  */
+.problem_of_Day{
+    display: flex;
+    /* border: 2px solid red; */
+    align-items: center;
+    justify-content: center;
+    padding: 101px 0px;
+}
+.problem{
+   display: flex;
+   width: 65%;
+   align-items: center;
+   border: 2px solid #e1e1e1;
+   border-radius: 12px;
+}
+.team_sol{
+display: flex;
+align-items: center;
+}
+.team_sol img{
+    height: 269px;
+    width: 136%;
+    border-top-left-radius: 11px;
+    border-bottom-left-radius: 11px;
+}
+.statement{
+    margin-right: 25px;
+    position: relative;
+    bottom: 28px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.statement h3{
+    color: #308d46;
+}
+.statement p{
+    padding-top: 10px;
+    color: #3d3d3d;
+}
+.time{
+    /* border: 2px solid red; */
+    width: 46%;
+    padding: 17px;
+    height: 235px;
+    display: flex;
+    background-color: #e4e4e4;
+    flex-direction: column;
+    border-top-right-radius: 11px;
+    border-bottom-right-radius: 11px;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.up{
+display: flex;
+width: 100%;
+justify-content: space-around;
+}
+.mid{
+    display: flex;
+    width: 94%;
+    position: relative;
+    left: 15px;
+    bottom: 6px;
+    justify-content: space-between;
+}
+.show_time{
+    padding: 0px 10px;
+    font-size: 16px;
+    font-family: monospace;
+}
+.number{
+    font-weight: 600;
+    font-size: 27px;
+    font-family: system-ui;
+    
+}
+.low{
+    padding-top: 22px;
+    display: flex;
+    align-items: center;
+}
+.low button{
+    cursor: pointer;
+    font-size: 17px;
+    padding: 10px 56px;
+    border: none;
+    border-radius: 5px;
+    font-family: "baloo 2";
+    color: white;
+    background-color: #16479a;
+}
+.low button:hover{
+    background-color: #1f3f75;
+    transform: scale(.9);
+}
+/* -------------FOOTER DESIGN------------------   */
+
+#company img{
+    height: 102px;
+    width: 192px;
+    position: relative;
+    left: 6px;
+    bottom: 7px;
+}
+footer{
+    display: flex;
+    /* border: 2px solid blue; */
+    justify-content: space-between;
+    padding-top: 28px;
+}
+.symbol_address_social{
+    /* border: 2px solid red; */
+    justify-content: space-evenly;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   
+}
+.symbol_address_social div{
+    display: flex ;
+    /* border: 2px solid red; */
+    width: 73%;
+    align-items: flex-start;
+    font-family: system-ui;
+    margin: 5px 1px;
+}
+.symbol_address_social div a{
+    text-decoration: none;
+    color:black;
+}
+.symbol_address_social div a:hover{
+    color: #308d46;
+}
+.locate_mail img{
+    height: 24px;
+    width: 7%;
+    padding: 3px 12px;
+}
+#social_container{
+    display: flex;
+    justify-content: start;
+    padding-left: 11px;
+}
+.social_icons{
+   margin: 0px 2px;
+}
+.social_icons img{
+    height: 39px;
+    width: 39px;
+}
+.social_icons img:hover{
+    box-shadow: 2px 2px 10px;
+    border-radius: 30px;
+}
+#download_app{
+    position: relative;
+    right: 20px;
+}
+#playstore img{
+    height: 98px;
+    width: 156px;
+}
+#appstore img{
+    height: 139px;
+    width: 144px;
+    position: relative;
+    bottom: 21px;
+    left: -27px;
+}
+.other{
+    /* border: 2px solid red; */
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+}
+.other ul {
+    padding: 0px 10px;
+}
+.other ul li{
+    list-style: none;
+    padding: 7px 0px;
+}
+.first{
+    color: blue;
+    font-weight: 100;
+    letter-spacing: .1em;
+}
+.other ul li a{
+    text-decoration: none;
+    color:#848484;
+    font-family: system-ui;
+}
+#end{
+   text-align: center;
+   border-top: 2px solid grey;
+}

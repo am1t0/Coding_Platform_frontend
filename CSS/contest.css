@@ -1,0 +1,155 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    box-sizing: border-box;
+}
+.banner{
+   background-color: lavender;
+}
+.banner h1{
+    text-align: center;
+    padding: 22px 0px;
+    font-size: xxx-large;
+}
+.banner p{
+    text-align: center;
+    font-size: 1.25rem;
+    padding-bottom: 33px;
+}
+#list_Comp{
+    padding-top: 66px;
+    display: flex;
+    flex-direction: column;
+    gap: 67px;
+}
+/* /-----------DESCRIPTION OF CONTESTS----------  */
+.description{
+    text-align: center;
+    /* border: 2px solid; */
+    padding-top: 23px;
+}
+/* ------------DESINGNING EACH COMPETION BOX------------  */
+
+.layout{
+    display: flex;
+    justify-content: center;
+    border: 2px solid #d0d0d0;
+    align-items: center;
+    gap: 88px;
+    height: 296px;
+}
+
+/* --------------TEMPORARY CONTENT----------------  */
+.temporary{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 250px;
+    gap: 10px;
+}
+/* --------------------LOADER ADJUSTMENT---------------  */
+#loader img{
+    height: 53px;
+    width: 53px;
+}
+ /* -----------CONTAINING THE IMG OF PLATFORM-------------  */
+.same{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 20%;
+}
+.detailContainer{
+    display: flex;
+    flex-direction: column;
+    gap: 13px;
+    width: 45%;
+    background-color: #bcbcbc;
+}
+
+ /* --------------------DESIGNING THE INSERTED HTML DETAILS-----------  */
+
+ .detailContainer h3{
+    font-size: 32px;
+ }
+ .detailContainer p{
+    font-size: 21px;
+ }
+.give{
+    border: none;
+    padding: 7px 123px;
+    background: #6363f1;
+    font-family: "baloo 2";
+    border-radius: 5px;
+}
+.give:hover{
+   background-color:#4343df; ;
+   transform: scale(.9);
+}
+.give a{
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+}
+.forward img{
+    height: 25px;
+}
+
+.forward{
+    border-radius: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+    background-color: beige;
+    cursor: pointer;
+    width: 79px;
+    box-shadow: 0px 2px 3px;
+}
+.forward:hover{
+    background-color: #c9c9c9;
+}
+
+/* --------------THE CONTENT IN THE BOXES ------------------------  */
+#abt_platform{
+    text-align: justify;
+    padding-left: 23px;
+}
+.upp{
+    position: relative;
+    bottom: 22px;
+}
+/* ---------------------LOGOS OF PLATFORM AND THEIR CONTAINER--------------------  */
+#codeforcesImg{
+
+}
+#codeforcesImg img{
+    height: 72px;
+    width: 221px;
+}
+#leetcodeImg{
+
+}
+#leetcodeImg img{
+    height: 140px;
+    width: 235px;
+}
+#codechefImg{
+
+}
+#codechefImg img{
+    height: 137px;
+    width: 219px;
+}
+#hackerrankImg{
+
+}
+#hackerrankImg img{
+    height: 142px;
+    width: 233px;
+}
+
+/

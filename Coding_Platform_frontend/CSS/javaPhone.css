@@ -1,0 +1,6 @@
+@media screen and (max-width:896px) {
+    
+  #first_aside{
+    display: none !important;
+  }
+}

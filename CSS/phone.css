@@ -1,0 +1,167 @@
+@media screen and (max-width:896px){
+/* ---------UPPERNAV DESIGN-------------*/
+.log_n_sign button{
+   line-height: 23px;
+   font-size: 10px;
+}
+#prem{
+    margin-right: 9px;
+}
+
+.user img{
+    height: 23px;
+    width: 23px;
+}
+/* ------------LOWERNAV DESIGN----------------  */
+
+.lowernav ul li a{
+    font-size: 10pt;
+}
+ /*------------HOME SECTION-----------------*/
+
+ .searchBar input{
+    width:251px;
+    font-size: 13px;
+ }
+ .Slogan{
+    padding-top: 0px;
+ }
+ .Slogan h1{
+    font-size: 37px;
+ }
+ .box{
+    width: 46%;
+ }
+ 
+ /* -------------MAIN CONTENT----------------*/
+ .main_content{
+    margin: 88px 16px;
+ }
+ .content div{
+    height: 150px;
+    width: 287px;
+ }
+.content div img{
+     width: 16%;
+}
+.content div{
+    font-size: 19px;
+}
+ /* ------------- CONTAINER(codechef) DESIGN---------------  */
+
+.courses{
+    max-height: 1012px;
+    padding: 39px 0px;
+}
+#c1{
+    height: auto;
+    flex-direction: column;
+}
+#c2{
+    height: auto;
+    flex-direction: column-reverse;
+}
+#c2  #text{
+    padding-top: 56px;
+}
+#text{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0;
+}
+.btn{
+    padding: 12px 0px;
+}
+#text h1{
+    display: none;
+}
+.start{
+    font-size: 18px;
+}
+.end {
+    display: none;
+}
+.btn button{
+    font-size: 16px;
+    padding: 6px 13px;
+}
+#corrs_img{
+    width: 55%;
+}
+#corrs_img img{
+    width: 129%;
+    box-shadow: -7px -5px blue;
+}
+#ide img{
+    width: 76%;
+    box-shadow: 6px 5px blue;
+}
+#ide img{
+    
+}
+
+/* ---------PROBLEM STATEMENT------------------  */
+.problem{
+    flex-direction: column;
+    width: 63%;
+}
+.team_sol{
+    width: 100%;
+}
+.team_sol img{
+    border-bottom-left-radius: 0px;
+    border-top-right-radius: 11px;
+    width: 100%;
+}
+.statement{
+    bottom: 0px;
+    margin-right: 0px;
+   align-items: center;
+}
+.statement h3{
+    padding-top: 28px;
+}
+.statement p{
+    padding: 10px 33px;
+}
+.time{
+    width: 100%;
+    padding: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius:11px;
+    border-bottom-right-radius: 11px;
+}
+    /* ----------FOOTER ----------------------  */
+footer{
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.other{
+    flex-wrap: wrap;
+}
+
+.symbol_address_social{
+    align-items: center;
+    width: 332px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}

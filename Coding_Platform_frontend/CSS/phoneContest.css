@@ -1,0 +1,34 @@
+@media screen and (max-width: 1147px) {
+    #list_Comp{
+        flex-direction: column;
+    }
+    .layout{
+        flex-direction: column;
+        gap: 28px;
+        height: auto;
+    }
+    #abt_platform{
+        display: none;
+    }
+    .detailContainer{
+        width: 550px;
+    }
+    
+}
+@media screen and (max-width: 593px) {
+     .detailContainer{
+        width: 370px;
+     }
+     .detailContainer h3{
+        font-size: 25px;
+     }
+     .detailContainer p{
+        font-size: 14px;
+     }
+     .give{
+        padding: 1px 63px;
+     }
+     .forward img{
+        height: 20px;
+     }
+}
