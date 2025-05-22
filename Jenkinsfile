@@ -5,23 +5,22 @@ pipeline {
         REPO = 'am1t0/Coding_Platform_frontend'
         GIT_EMAIL = '22bit115@ietdavv.edu.in'
         GIT_NAME = 'Amit Pandey'
-        GITHUB_CRED = credentials('git-token') // this sets GITHUB_CRED, GITHUB_CRED_USR, GITHUB_CRED_PSW
+        GITHUB_CRED = credentials('github-token')
     }
 
     stages {
         stage('Checkout Code') {
             steps {
-                // Cloning using GitHub credentials
                 sh 'git clone https://${GITHUB_CRED_USR}:${GITHUB_CRED_PSW}@github.com/${REPO}.git'
             }
         }
 
         stage('Prepare GitHub Pages Content') {
             steps {
-                script {
-                    sh 'mkdir -p gh-pages-deploy'
-                    sh 'cp -r * gh-pages-deploy'
-                }
+                sh '''
+                    mkdir -p gh-pages-deploy
+                    rsync -av --exclude='gh-pages-deploy' ./ gh-pages-deploy/
+                '''
             }
         }
 
