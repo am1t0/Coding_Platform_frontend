@@ -9,17 +9,12 @@ pipeline {
     }
 
     stages {
-        stage('Checkout Code') {
-            steps {
-                sh 'git clone https://${GITHUB_CRED_USR}:${GITHUB_CRED_PSW}@github.com/${REPO}.git'
-            }
-        }
-
         stage('Prepare GitHub Pages Content') {
             steps {
                 sh '''
-                    mkdir -p gh-pages-deploy
-                    rsync -av --exclude='gh-pages-deploy' ./ gh-pages-deploy/
+                    rm -rf gh-pages-deploy
+                    mkdir gh-pages-deploy
+                    rsync -av --exclude='.git' --exclude='gh-pages-deploy' --exclude='Jenkinsfile' ./ gh-pages-deploy/
                 '''
             }
         }
