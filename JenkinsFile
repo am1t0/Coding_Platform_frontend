@@ -4,7 +4,7 @@ pipeline {
     environment {
         GITHUB_TOKEN = credentials('github-token')  // Create this Jenkins credential
         REPO = 'am1t0/Coding_Platform_frontend'
-        GIT_EMAIL = 'amiitt43@gmail.com'
+        GIT_EMAIL = '22bit115@ietdavv.edu.in'
         GIT_NAME = 'Amit Pandey'
     }
 
