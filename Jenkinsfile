@@ -5,7 +5,7 @@ pipeline {
         REPO = 'am1t0/Coding_Platform_frontend'
         GIT_EMAIL = '22bit115@ietdavv.edu.in'
         GIT_NAME = 'Amit Pandey'
-        GITHUB_CRED = credentials('github-token')
+        GITHUB_CRED = credentials('git-token')
     }
 
     stages {
